@@ -1,0 +1,68 @@
+void setup() {
+  size(600,600);
+  background(0,150,256);
+}
+
+void draw() {
+  //shadow
+  noStroke();
+  fill(75);
+  ellipse(150, 435, 400, 30);
+  //body
+  fill(250,100,100);
+  ellipse(300, 300, 300, 300);
+  fill(250,110,110);
+  ellipse(300,300,295,295);
+  fill (250,120,120);
+  ellipse(300,300,290,290);
+  fill(250,140,140);
+  ellipse(300,300,285,285);
+  //feet
+  fill(250, 75, 75);
+  ellipse(375, 375, 100, 175);
+  ellipse(225, 375, 100, 175);
+  //cheeks
+  fill(256, 50, 50);
+  ellipse(230, 250, 30, 15);
+  ellipse(370, 250, 30, 15);
+  fill(0);
+  if ((mouseX >= 0 && mouseX <= 249) && mouseY >= 0 && mouseY <= 199){
+    ellipse(315, 200, 10, 20);
+    ellipse(235, 200, 10, 20);
+    fill(30);
+    ellipse(315, 200, 7, 14);
+    ellipse(235, 200, 7, 14);
+  }
+  else if ((mouseX >= 250 && mouseX <= 349) && mouseY >= 0 && mouseY <= 199){
+    ellipse(340, 200, 10 ,20);
+    ellipse(260, 200, 10, 20);
+    fill(30);
+    ellipse(340, 200, 7, 14);
+    ellipse(260, 200, 7, 14);
+  }
+  else if ((mouseX >= 350 && mouseX <= 600) && (mouseY >= 0 && mouseY <= 199)){
+    ellipse(365, 200, 10, 20);
+    ellipse(285, 200, 10, 20);
+    fill(30);
+    ellipse(365, 200, 7, 14);
+    ellipse(285, 200, 7, 14);
+  }
+   else{
+     //eyes
+     fill(0);
+     ellipse(340, 225, 10, 20);
+     ellipse(260, 225, 10, 20);
+     //mouth
+    ellipse(300, 275, 20, 30);
+    //inner eye
+    fill(15);
+    ellipse(340, 225, 7, 14);
+    ellipse(260, 225, 7, 14);
+    //shiny eye part
+    fill(255);
+    ellipse(340,220,3,3);
+    ellipse(260,220,3,3);
+   }
+}
+
+  
